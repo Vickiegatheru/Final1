@@ -95,7 +95,7 @@
   font-size: 250%;
   color: white;
   margin-top: 4%;
-  margin-left: -60%;
+  margin-left: 15%;
 }
 
 .desktop .button {
