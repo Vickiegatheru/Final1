@@ -1046,7 +1046,7 @@ width: 120px;
     <div class="column2">
       <div id="paragraph1">
         <div id="country">
-          <img id="flag" width="50" height="50" src="/Images/flag.jpeg" alt="UAE Flag">
+          <img id="flag" width="70" height="50" src="/Images/flag.jpeg" alt="UAE Flag">
           <p id="arab">United Arab Emirates</p>
           <img id="scroll" src="">
         </div>
