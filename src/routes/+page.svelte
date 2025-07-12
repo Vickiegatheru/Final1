@@ -133,7 +133,8 @@
   grid-template-rows: 1fr 1fr 1fr;
   margin-top: 0%;
   position: absolute;
-  margin-left: -1%;
+  margin-left: -1%; 
+   gap: 0px;
 }
 
  
@@ -151,9 +152,10 @@ margin-left: 8%;
   background: transparent linear-gradient(180deg, #68EB75 0%, #0D6DB8 100%) 0% 0% no-repeat padding-box;
   border-radius: 30px 90px 0px 0px;
   opacity: 1;
-  margin-left: 0%;
   width: 40%;
-  height: 250px;
+  height: 250px; margin-left: 1.6%;
+   margin-bottom: 0%;
+
   margin-top: 0%;
 }
 
@@ -174,10 +176,10 @@ margin-left: 8%;
   grid-template-rows: 1fr 2fr;
   top: 0%;
   width: 50.8%;
-    margin-bottom: 0%;
-    margin-top: -2%;
+    margin-bottom:1.04%;
+    margin-top: -2.5%;
     height:300px ;
-
+margin-left: 1.6%;
 }
 
 .desktop #paragraph0a {
@@ -191,7 +193,8 @@ margin-left: 8%;
   letter-spacing: 0px;
   color: #142944;
   opacity: 1;
-  font-size: 120%;
+  font-size: 120%;   
+
 }
 
 .desktop #google {
@@ -1092,7 +1095,9 @@ width: 120px;
       </div>
 
       <div id="paragraph0"> 
-        <p id="paragraph0a">You don’t need to download ten apps for your financial services. Use LYPA for everything. Send money from UAE to Kenya instantly and right from the LYPA app on your phone.</p>
+        <p id="paragraph0a">You don’t need to download ten apps for your financial services. 
+                            Use LYPA for everything.
+                            Send money from UAE to Kenya instantly and right from the LYPA app on your phone.</p>
         <div id="google">
           <div id="applestore">
             <img src="/Images/Image 94.png" alt="App Store">
