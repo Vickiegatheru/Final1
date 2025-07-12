@@ -887,7 +887,7 @@ margin-top: 5%;
 }
 .mobile #numbern{
   grid-column-start: 3;
-  margin-top: -23%;
+  margin-top: -40%;
   margin-left: 45%;
 top: 488px;
 left: 143px;
@@ -1054,7 +1054,28 @@ margin-left: 38%;
       border-radius: 5px;  
       margin-top: -10%;
     }
+    .mobile .dropbtnb {
+  background-color: #FFFFFF;
+  color: orangered;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 6%;
+  margin-right: 30%;
 
+
+}
+.mobile .arrowa {
+  background-color: #FFFFFF;
+  color: orangered;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 26%;
+  margin-top: 0%;
+height: 4px;
+
+}
     .mobile input[type="tel"]::placeholder {
       text-align: left;
 font: normal normal medium 15px/15px Paralucent;
@@ -1065,10 +1086,14 @@ width: 120px;
 
     }
    .mobile #code{
-        margin-top: 4%;
-        margin-left: -75% ;
+        margin-top: -5%;
+        margin-left: 5% ;
         color: black;
-    }
+font: normal normal medium 20px/20px Paralucent;
+    letter-spacing: 0px;
+    color: #001C5E; 
+  font-size: 130%;
+  }
 
 
 
@@ -1258,7 +1283,8 @@ width: 120px;
 
       <div id="safaricom">
         <div id="kes"><p>KES</p></div>
-        <div id="scroll"></div>
+             <button class="dropbtnb"><span class="arrow">&#9660;</span></button>
+ 
         <div id="line"></div>
         <div id="money">
           <input type="number" id="numberInput" name="numberInput" min="0" max="1000000" step="1" placeholder="10000">
@@ -1267,8 +1293,8 @@ width: 120px;
 
       <p id="p2">ENTER PHONE NUMBER</p>
       <div id="number">
-        <div id="code">+254</div>
-        <div id="scrolln"></div>
+        <div id="code"><p>+254</p></div>
+             <span class="arrowa">&#9660;</span>
         <div id="linen"></div>
         <div id="numbern">
           <input type="tel" id="phoneInput" name="phoneInput" placeholder="07 xx xxx xxx">
