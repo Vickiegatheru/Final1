@@ -12,10 +12,12 @@
     console.log('Password:', password);
     alert(`Logging in with:\nPhone: ${phone}\nPassword: ${password}`);
 
-    window.location.href = "https://accounts.google.com/signin";
+    window.location.href = "https://accounts.google.com/signin";  
   }
  
-
+  function goBack() {
+    history.back();
+  }
 
 </script>
 
@@ -143,8 +145,10 @@
 
 <div class="column2">
   <div class="top">
-    <div id="arrow"> <i class="fa-solid fa-arrow-left"></i>
-</div>
+<span id="arrow" on:click={goBack}>
+<i class="fa-solid fa-arrow-left"></i> 
+</span>
+
   </div>
 
   <div class="paragraph">
