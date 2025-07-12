@@ -319,6 +319,11 @@ margin-top:6% ;
   background: transparent url('img/Image 83.png') 0% 0% no-repeat padding-box;
   opacity: 0.52;
 }
+.desktop #line2 {   
+  margin-bottom: 0%;
+    margin-top: 0%;
+
+ }
 
 .desktop #sendAmount {
   height: 105px;
@@ -336,21 +341,30 @@ margin-top:6% ;
   font: 500 41px/41px 'Paralucent', sans-serif;
   color: #001C5E;
   text-align: center;
+  margin-left: 20%;
+  margin-top: -8.5%;
 }
-
+.desktop #moneya {
+  height: 49px;
+  font: 500 41px/41px 'Paralucent', sans-serif;
+  color: #001C5E;
+  text-align: center;
+  margin-top: -14%;
+  margin-left: 15%;
+}
 .desktop #sender {
   margin-left: 40%;
   margin-top: 5%;
-  top: 973px;
-  left: 1301px;
   width: 96px;
-  height: 49px;
-  text-align: left;
+  height: 75px;
   font: normal normal medium 41px/41px Paralucent;
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 1;
   font-size: 200%;
+  display: flex;
+  align-items: center; 
+
 }
 
 .desktop #receiveAmount {
@@ -362,12 +376,11 @@ margin-top:6% ;
   display: grid;
   place-items: center;
   margin: 100px auto 0 auto;
-  margin-top: 5%;
+  margin-top: -20%;
 }
 
 .desktop #send {
   margin-left: 10%;
-  top: 958px;
   left: 1116px;
   width: 466px;
   height: 78px;
@@ -538,6 +551,54 @@ margin-top:6% ;
   opacity: 1;
 }
 
+.desktop #a{ 
+    color: #001C5E;
+  font: 500 41px/41px 'Paralucent', sans-serif;
+  margin-left: -70%;   
+
+  grid-column-start: 1;
+  margin-top: 7%;   
+
+
+}
+.desktop .dropbtn {
+  background-color: #FFFFFF;
+  color: orangered;
+  font-size: 38px;
+  border: none;
+  cursor: pointer;
+}
+.desktop .dropbtna {
+  background-color: #FFFFFF;
+  color: orangered;
+  font-size: 38px;
+  border: none;
+  cursor: pointer;
+  margin-top: -22%;
+  margin-right: 40%;
+
+
+}
+
+.desktop .dropbtnb {
+  background-color: #FFFFFF;
+  color: orangered;
+  font-size: 38px;
+  border: none;
+  cursor: pointer;
+  margin-top: 6%;
+  margin-right: 40%;
+
+
+}
+
+
+.desktop #b{    
+  font: 500 41px/41px 'Paralucent', sans-serif;
+margin-bottom: 6%;
+  color: #001C5E;
+  margin-top: 10%;
+margin-left: 8%;}
 
 :global(body.mobile) {
     grid-template-rows: 1fr 2fr 1fr 1fr;
@@ -1048,21 +1109,38 @@ width: 120px;
         <div id="country">
           <img id="flag" width="70" height="50" src="/Images/flag.jpeg" alt="UAE Flag">
           <p id="arab">United Arab Emirates</p>
+            <button class="dropbtn"><span class="arrow">&#9660;</span></button>
+
           <img id="scroll" src="">
         </div>
 
         <p id="receive">SEND AMOUNT</p>
-        <div id="sendAmount">
-          <p id="money">10,000.00</p>
+        <div id="sendAmount">                   
+          
+          <p id="a">AED</p>           
+             <button class="dropbtna"><span class="arrow">&#9660;</span></button>
+
+                 <div style="width: 4px; height: 70px; background-color: lightgrey; margin-left:-25%; margin-top:-23%"></div>
+ 
+          <p id="moneya">10,000.00</p>
         </div>
 
         <p id="receive">RECEIVE AMOUNT</p>
-        <div id="receiveAmount">
+                              <p id="b">KES</p>
+
+
+      <div id="receiveAmount">
+             <button class="dropbtnb"><span class="arrow">&#9660;</span></button>
+
+                 <div id="line2" style="width: 4px; height: 70px; background-color: lightgrey; margin-left:-25%; margin-top:-11%"></div>
+
+
           <p id="money">320,193.00</p>
         </div>
 
         <p id="money3">1 AED = 32.02 KES</p>
         <div id="send">
+
           <p id="sender">Send</p>
         </div>
         <p id="clicking">By clicking send, I agree with terms & policy</p>

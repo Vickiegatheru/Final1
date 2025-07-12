@@ -31,7 +31,7 @@
     color: white;
     font-size: 500%;
     margin-top: 8%;
-    margin-bottom: 14%;
+    margin-bottom: 12.5%;
   }
 
   .row2 {

@@ -12,7 +12,6 @@
     console.log('Password:', password);
     alert(`Logging in with:\nPhone: ${phone}\nPassword: ${password}`);
 
-    // ✅ Redirect to Google Sign-In after successful input
     window.location.href = "https://accounts.google.com/signin";
   }
  
@@ -28,6 +27,8 @@
   }
 
   :global(body) {
+        background: #F5F5F5;
+
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
@@ -169,8 +170,7 @@
   <div class="forgot">
     <p>Forgot Password?</p>
   </div>
-
-  <!-- Sign In Button -->
+  
   <button class="signin" on:click={handleSignIn}>
     <span>Sign In</span>
     <span class="circle">
