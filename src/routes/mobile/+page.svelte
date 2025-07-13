@@ -49,7 +49,7 @@
   }
 
   .row3 {
-    background-image: url('Images/Image 82.png');
+    background-image: url('/Images/Image 82.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
