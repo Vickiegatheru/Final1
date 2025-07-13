@@ -53,15 +53,6 @@
   }
 }
 
-/* Show desktop only on large screens */
-@media (min-width: 769px) {
-  .desktop {
-    display: block;
-  }
-  .mobile {
-    display: none;
-  }
-}
 
 
 
@@ -605,7 +596,9 @@ margin-left: 8%;}
 
 :global(body.mobile) {
     grid-template-rows: 1fr 2fr 1fr 1fr;
-    height: 600px;
+    height: 640px;       
+    width: 360px;
+
   }
 .mobile .row1 {
     grid-row-start: 1;
@@ -882,8 +875,8 @@ width: 3px;
 height: 30px;
 background: #ECEFF2 0% 0% no-repeat padding-box;
 opacity: 1;
-margin-left: 30%;
-margin-top: 5%;
+margin-left: 35%;
+margin-top: -2%;
 }
 .mobile #numbern{
   grid-column-start: 3;
@@ -984,8 +977,8 @@ margin-top: -3%;
 }
 .mobile #about{
     grid-column-start: 4;
-    margin-left: 35%;
-    margin-top: -7%;
+    margin-left: 55%;
+    margin-top: -13%;
 }
 .mobile #p2{
   font: normal normal medium 8px/7px Paralucent;
@@ -1000,14 +993,14 @@ margin-top: 4%;
 }
 .mobile #picture1{
   grid-column-start: 3;
-  margin-top: -6.5%;
-  margin-left:-20%;
+  margin-top: -7%;
+  margin-left:40%;
 
 }
 .mobile #picture2{
   grid-column-start: 2;
-  margin-left:14%;
-  margin-top: -6.2%;
+  margin-left:60%;
+  margin-top: -5.2%;
 
 }
 .mobile #p3{
@@ -1025,9 +1018,11 @@ margin-left: 38%;
 .mobile input[type="number"] {
       border: none;
       outline: none;
-      font-size: 16px;
+      font-size: 110%;
       padding: 8px;
-      width: 120px;
+      color: #001C5E;
+       margin-left: -16%;
+      width: 110px;
       height: 20px;
       margin-top: 3%;
       background-color: white;
@@ -1047,12 +1042,14 @@ margin-left: 38%;
     .mobile input[type="tel"] {
       border: none;            /* Remove border */
       outline: none;           /* Remove blue focus outline */
-      font-size: 16px;
+      font-size: 130%;
       padding: 8px;
       width: 180px;
       background-color: #f0f0f0; /* Optional background */
       border-radius: 5px;  
-      margin-top: -10%;
+      margin-top: 60%;      
+      margin-left: -10%;
+
     }
     .mobile .dropbtnb {
   background-color: #FFFFFF;
@@ -1071,9 +1068,10 @@ margin-left: 38%;
   font-size: 20px;
   border: none;
   cursor: pointer;
-  margin-left: 26%;
-  margin-top: 0%;
+  margin-left: 23%;
+  margin-top: -17%;
 height: 4px;
+width: 4px;
 
 }
     .mobile input[type="tel"]::placeholder {
@@ -1095,6 +1093,8 @@ font: normal normal medium 20px/20px Paralucent;
   font-size: 130%;
   }
 
+   .mobile #line{        margin-left: 15% ;
+}
 
 
 </style>
@@ -1284,20 +1284,22 @@ font: normal normal medium 20px/20px Paralucent;
       <div id="safaricom">
         <div id="kes"><p>KES</p></div>
              <button class="dropbtnb"><span class="arrow">&#9660;</span></button>
- 
-        <div id="line"></div>
+
+        <div id="line">  <div style="width: 3px; height: 30px; background-color: lightgrey; margin-left:20%; margin-top:10%"></div>
+</div>
         <div id="money">
-          <input type="number" id="numberInput" name="numberInput" min="0" max="1000000" step="1" placeholder="10000">
+          <input type="number" id="numberInput" name="numberInput" min="0" max="1000000" step="1" placeholder="10,000.00">
         </div>
       </div>
 
       <p id="p2">ENTER PHONE NUMBER</p>
       <div id="number">
         <div id="code"><p>+254</p></div>
-             <span class="arrowa">&#9660;</span>
-        <div id="linen"></div>
+             <div class="arrowa"><span class="arrow">&#9660;</span></div>
+        <div id="linen">  <div style="width: 3px; height: 30px; background-color: lightgrey;"></div>
+</div>
         <div id="numbern">
-          <input type="tel" id="phoneInput" name="phoneInput" placeholder="07 xx xxx xxx">
+          <input type="tel" id="phoneInput" name="phoneInput" placeholder="7xx xxx xxx">
         </div>
       </div>
 
